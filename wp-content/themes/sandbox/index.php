@@ -5,10 +5,26 @@
   <div id="wrapper">
     <div id="line_holder"></div>
     <img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-crop.png" id="splash" />
-    <a href="http://localhost:8888/abbey/events" id="events"><h2>EVENTS</h2><h3>AT THE ABBEY</h3></a>
-    <a href="http://localhost:8888/abbey/classes" id="classes"><h2>CLASSES</h2><h3>AT THE ABBEY</h3></a>
-    <a href="http://localhost:8888/abbey/about" id="about"><h2>ABOUT</h2><h3>THE ABBEY</h3></a>
-    <a href="http://localhost:8888/abbey/rent" id="rent"><h2>RENT</h2><h3>THE ABBEY</h3></a>
+    <a href="http://localhost:8888/abbey/events" id="events">
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-on.png" class="no-shows" />
+	<h2>EVENTS</h2><h3>AT THE ABBEY</h3>	
+    </a>
+
+    <a href="http://localhost:8888/abbey/classes" id="classes">
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="no-shows" />
+	<h2>CLASSES</h2><h3>AT THE ABBEY</h3>
+    </a>
+
+    <a href="http://localhost:8888/abbey/about" id="about">
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-on.png" class="no-shows" />
+	<h2>ABOUT</h2><h3>THE ABBEY</h3>
+    </a>
+
+    <a href="http://localhost:8888/abbey/rent" id="rent">
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="no-shows" />
+	<h2>RENT</h2><h3>THE ABBEY</h3>
+    </a>
+
     <a href="http://localhost:8888/abbey/tweets" id="tweets"><h2>TWEETS</h2>
 	<div class="feed"></div>
 	<div class="twitter_list"></div>
