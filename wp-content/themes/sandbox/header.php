@@ -11,6 +11,34 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.svg_.js"></script>
+  <script type="text/javascript" src="wp-content/uploads/2011/12/events.js"></script>
   <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.soliloquy.js"></script>
+
+<script>
+ $(function(){  
+    $('.feed')
+      .slq().facebook({username: 'FremontAbbey', posts: 8, relativeDates: false })
+      .slq().twitter({username: 'fremontabbey', posts: 6, relativeDates: false })
+      .slq().twitterList({username: 'fremontabbey', listname: 'core', posts: 2 })
+});
+</script>
+
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '154293281341644',
+            status     : true, 
+            cookie     : true,
+            xfbml      : true,
+            oauth      : true,
+          });
+        };
+        (function(d){
+           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           d.getElementsByTagName('head')[0].appendChild(js);
+         }(document));
+      </script>
 </head>
 

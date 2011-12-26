@@ -1,5 +1,16 @@
 <?php get_header() ?>
 
+      <div id="fb-root"></div>
+      <div 
+        class="fb-registration" 
+        data-fields="[{'name':'name'}, {'name':'email'},
+          {'name':'favorite_car','description':'What is your favorite car?',
+            'type':'text'}]" 
+        data-redirect-uri="URL_TO_LOAD_AFTER_REGISTRATION"
+      </div>
+
+	<div class="fb-login-button">Login with Facebook</div>
+
 	<div id="container">
 		<div id="content">
 

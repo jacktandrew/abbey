@@ -219,21 +219,30 @@ padding:0;
 
 
 
-* { overflow: hidden; margin: 0; padding: 0; text-decoration: none;}
+* { margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif; }
 body { background: #eee; }
+#no_overflow { overflow: hidden; }
+p { margin: 10px; }
 
 #wrapper { position: absolute; top: 50%; left: 50%;  overflow: visible;   }
-#line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 800px; width: 3000px; z-index: -1;}
-#splash { position: absolute; top: -250px; left: -450px;  }
+#line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 800px; width: 3000px; z-index: -1; }
+#splash { position: absolute; top: -250px; left: -450px; }
 #events, #classes, #about, #rent, #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; text-align: center; }
 #events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 35px; }
 #classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; }
 #rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; }
 #about { height: 120px; width: 120px; top: 140px; left: -147px; padding-top: 35px; }
-#tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px;}
-#tweets h2 { margin-bottom: 10px;}
-h3 { font-size: 12px;}
-#svg_box { margin: -682px 0 0 -2758px; z-index: 5;}
+#tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px; }
+#tweets h2 { margin-bottom: 10px; }
+h3 { font-size: 12px; }
+#svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
+
+
+/*---:[ events calendar ]:---*/
+ .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }
+ .anEvent h3 { color: #3B5998; font-size: 1.17em; }
+ .anEvent h4 { color: #444; }
+
 
 /*---:[ soliloquy ]:---*/
 
@@ -242,6 +251,7 @@ h3 { font-size: 12px;}
 
       .twitter_post img, .twitter_post a { display: none; }
       .twitter_post { margin-bottom: 15px }
+      .twitter_post span { display: block; }	
       .twitter .post_content { display: table-cell }
       .created-at { font-size:70%; color:#666; clear: both; }
       .twitter .screen-name { font-weight: bold; color: #222; float: left; width: 133px; display: block; }
