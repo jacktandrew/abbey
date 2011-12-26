@@ -18,7 +18,7 @@
  $(function(){  
     $('.feed')
       .slq().facebook({username: 'FremontAbbey', posts: 8, relativeDates: false })
-      .slq().twitter({username: 'fremontabbey', posts: 6, relativeDates: false })
+      .slq().twitter({username: 'fremontabbey', posts: 4, relativeDates: false })
       .slq().twitterList({username: 'fremontabbey', listname: 'core', posts: 2 })
 });
 </script>

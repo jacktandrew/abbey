@@ -5,27 +5,29 @@
   <div id="wrapper">
     <div id="line_holder"></div>
     <img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-crop.png" id="splash" />
+    <a href="http://www.facebook.com/FremontAbbey?v=app_2344061033" target="_blank" id="icons"></a>
     <a href="http://localhost:8888/abbey/events" id="events">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-on.png" class="no-shows" />
-	<h2>EVENTS</h2><h3>AT THE ABBEY</h3>	
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-off.png" class="off-state" />
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-on.png" class="on-state" />    
     </a>
 
     <a href="http://localhost:8888/abbey/classes" id="classes">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="no-shows" />
-	<h2>CLASSES</h2><h3>AT THE ABBEY</h3>
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-off.png" class="off-state" />
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="on-state" />
     </a>
 
     <a href="http://localhost:8888/abbey/about" id="about">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-on.png" class="no-shows" />
-	<h2>ABOUT</h2><h3>THE ABBEY</h3>
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-off.png" class="off-state" />
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-on.png" class="on-state" />
     </a>
 
     <a href="http://localhost:8888/abbey/rent" id="rent">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="no-shows" />
-	<h2>RENT</h2><h3>THE ABBEY</h3>
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-off.png" class="off-state" />
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="on-state" />
     </a>
 
-    <a href="http://localhost:8888/abbey/tweets" id="tweets"><h2>TWEETS</h2>
+    <a href="http://localhost:8888/abbey/tweets" id="tweets">
+	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-tweets.png" />
 	<div class="feed"></div>
 	<div class="twitter_list"></div>
     </a>
