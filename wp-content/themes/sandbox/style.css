@@ -252,7 +252,22 @@ body { background: #efecd6; }
 #name_img {top: 63px; 		left: -17px;}
 #icons {top: 105px; 			left: 632px;}
 #nav_buttons {top: 140px; left: 132px;}
+
+#page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 160px;}
+#page #events {left: 132px;}
+#page #classes {left: 272px;}
+#page #rent {left: 412px;}
+#page #about {left: 552px;}
+
+#page #facebook, #page #twitter, #page #youtube {position: absolute; left: 702px; height: 50px; width: 50px;}
+#page #facebook {top: 141px;}
+#page #twitter {top: 191px;}
+#page #youtube {top: 241px;}
+
+
 #fb-t-yt {top: 141px; 		left: 702px;}
+.CMS_input { width: 400px; padding: 20px;}
+.CMS_input p { margin: 10px; text-indent: 25px;}
 #dynamic_bar {width: 240px; float: right; padding: 10px;}
 #dynamic_bar img { margin: 10px;}
 #dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
