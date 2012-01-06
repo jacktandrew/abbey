@@ -2,32 +2,32 @@
 
 <body id="no_overflow">
 
-  <div id="wrapper">
+  <div id="splash">
     <div id="line_holder"></div>
-    <img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-crop.png" id="splash" />
+    <img src="../../abbey/wp-content/uploads/2011/12/splash-crop.png" id="main_img" />
     <a href="http://www.facebook.com/FremontAbbey?v=app_2344061033" target="_blank" id="icons"></a>
-    <a href="http://localhost:8888/abbey/events" id="events">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-off.png" class="off-state" />
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-events-on.png" class="on-state" />    
+    <a href="../../abbey/events" id="events">
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-events-off.png" class="off-state" />
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-events-on.png" class="on-state" />    
     </a>
 
-    <a href="http://localhost:8888/abbey/classes" id="classes">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-off.png" class="off-state" />
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="on-state" />
+    <a href="../../abbey/classes" id="classes">
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-classes-off.png" class="off-state" />
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="on-state" />
     </a>
 
-    <a href="http://localhost:8888/abbey/about" id="about">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-off.png" class="off-state" />
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-about-on.png" class="on-state" />
+    <a href="../../abbey/about" id="about">
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-about-off.png" class="off-state" />
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-about-on.png" class="on-state" />
     </a>
 
-    <a href="http://localhost:8888/abbey/rent" id="rent">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-off.png" class="off-state" />
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="on-state" />
+    <a href="../../abbey/rent" id="rent">
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-rent-off.png" class="off-state" />
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="on-state" />
     </a>
 
-    <a href="http://localhost:8888/abbey/tweets" id="tweets">
-	<img src="http://localhost:8888/abbey/wp-content/uploads/2011/12/splash-tweets.png" />
+    <a href="../../abbey/tweets" id="tweets">
+	<img src="../../abbey/wp-content/uploads/2011/12/splash-tweets.png" />
 	<div class="feed"></div>
 	<div class="twitter_list"></div>
     </a>

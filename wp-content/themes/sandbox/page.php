@@ -1,37 +1,26 @@
 <?php get_header() ?>
+  <div id="line_holder"></div>
+  <div id="page">
+    <div id="floater">
 
-      <div id="fb-root"></div>
-      <div 
-        class="fb-registration" 
-        data-fields="[{'name':'name'}, {'name':'email'},
-          {'name':'favorite_car','description':'What is your favorite car?',
-            'type':'text'}]" 
-        data-redirect-uri="URL_TO_LOAD_AFTER_REGISTRATION"
+      <img src="../../abbey/wp-content/uploads/2012/01/name.png" id="name_img"/>
+      <img src="../../abbey/wp-content/uploads/2012/01/icons.png" id="icons" />
+      <br/>
+      <img src="../../abbey/wp-content/uploads/2012/01/nav_buttons.png" id="nav_buttons"/>
+      <img src="../../abbey/wp-content/uploads/2012/01/fb-t-yt.png" id="fb-t-yt" />
+      <div id="page_wrapper">
+        <div id="dynamic_bar">
+          <img src="../../abbey/wp-content/uploads/2012/01/tweets_page.png" />
+          <div class="feed"></div>
+          <div class="dynamic">ect.</div>
+          <div class="dynamic">ect.</div>
+        </div>
+        <?php the_post() ?>
+        <?php the_content() ?>
       </div>
+      
+        
+    </div><!-- #floater -->
+  </div><!-- #page -->
 
-	<div class="fb-login-button">Login with Facebook</div>
-
-	<div id="container">
-		<div id="content">
-
-<?php the_post() ?>
-
-			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
-				<h2 class="entry-title"><?php the_title() ?></h2>
-				<div class="entry-content">
-<?php the_content() ?>
-
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
-
-<?php edit_post_link( __( 'Edit', 'sandbox' ), '<span class="edit-link">', '</span>' ) ?>
-
-				</div>
-			</div><!-- .post -->
-
-<?php if ( get_post_custom_values('comments') ) comments_template() // Add a key+value of "comments" to enable comments on this page ?>
-
-		</div><!-- #content -->
-	</div><!-- #container -->
-
-<?php get_sidebar() ?>
-<?php get_footer() ?>
+<!-- <?php get_footer() ?>

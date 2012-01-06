@@ -56,7 +56,7 @@ left:auto;
 clear:both;
 }
 
-div#container,div#primary {
+div#primary {
 margin-top:2em;
 }
 
@@ -222,27 +222,41 @@ padding:0;
 * { margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif; }
 body { background: #efecd6; }
 #no_overflow { overflow: hidden; }
-p { margin: 10px; }
+#splash p { margin: 10px; }
 
-#wrapper { position: absolute; top: 40%; left: 50%;  overflow: visible;   }
-#line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 1000px; width: 3000px; z-index: -1; }
-#splash { position: absolute; top: -250px; left: -450px; }
-#icons { height: 25px; width: 155px; position: absolute; top: -211px; left: -67px; }
+#splash { position: absolute; top: 40%; left: 50%;  overflow: visible;   }
+#splash #line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 1000px; width: 3000px; z-index: -1; }
+#splash #main_img { position: absolute; top: -250px; left: -450px; }
+#splash #icons { height: 25px; width: 155px; position: absolute; top: -211px; left: -67px; }
 
-.on-state, .off-state { position: absolute; top: 0px; left: 0px; }
-.on-state { visibility: hidden; }
-.off-state:hover { visibility: hidden; }
-#events:hover img, #classes:hover img, #rent:hover img, #about:hover img { visibility: visible; }
+#splash .on-state, .off-state { position: absolute; top: 0px; left: 0px; }
+#splash .on-state { visibility: hidden; }
+#splash .off-state:hover { visibility: hidden; }
+#splash #events:hover img, #splash #classes:hover img, #splash #rent:hover img, #splash #about:hover img { visibility: visible; }
 
-#events, #classes, #about, #rent, #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; text-align: center; }
-#events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 39px; }
-#classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; }
-#rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; }
-#about { height: 120px; width: 120px; top: 139px; left: -145px; padding-top: 35px; }
-#tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px; }
-#tweets h2 { margin-bottom: 10px; }
-#svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
+#splash #events, #splash #classes, #splash #about, #splash #rent, #splash #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; text-align: center; }
+#splash #events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 39px; }
+#splash #classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; }
+#splash #rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; }
+#splash #about { height: 120px; width: 120px; top: 139px; left: -145px; padding-top: 35px; }
+#splash #tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px; }
+#splash #tweets h2 { margin-bottom: 10px; }
+#splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
 
+/*---:[ typical pages ]:---*/
+#line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 1500px; margin-top: 190px; }
+#page {position:relative; left:50%;}
+#floater { float:right; position:relative; left:-50%; text-align:left;}
+#page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6;}
+#line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
+#name_img {top: 63px; 		left: -17px;}
+#icons {top: 105px; 			left: 632px;}
+#nav_buttons {top: 140px; left: 132px;}
+#fb-t-yt {top: 141px; 		left: 702px;}
+#dynamic_bar {width: 240px; float: right; padding: 10px;}
+#dynamic_bar img { margin: 10px;}
+#dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
+#dynamic_bar .dynamic {background: #939598; width: 220px; height: 120px; margin: 10px 0;}
 
 /*---:[ events calendar ]:---*/
  .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }
