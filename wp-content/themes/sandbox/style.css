@@ -247,7 +247,7 @@ body { background: #efecd6; }
 #line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 1500px; margin-top: 190px; }
 #page {position:relative; left:50%;}
 #floater { float:right; position:relative; left:-50%; text-align:left;}
-#page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6;}
+#page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6; color:#4d4d4d;}
 #line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
 #name_img {top: 63px; left: -17px;}
 #icons {top: 105px; left: 632px;}
@@ -268,10 +268,28 @@ body { background: #efecd6; }
 #fb-t-yt {top: 141px;left: 702px;}
 .CMS_input { width: 400px; padding: 20px;}
 .CMS_input p { margin: 10px; text-indent: 25px;}
+
+#content_container { width:440px; float:left; }
+
 #dynamic_bar {width: 240px; float: right; padding: 10px;}
-#dynamic_bar img { margin: 10px;}
+#dynamic_bar img { margin: 10px 0;}
 #dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
 #dynamic_bar .dynamic {background: #939598; width: 220px; height: 120px; margin: 10px 0;}
+
+/*---:[ Typography ]:---*/
+
+	#page_wrapper p { font-size:11px; line-height:14px; margin-bottom:10px }
+	#page_wrapper h1 { font-size:24px; line-height:24px; }
+	#page_wrapper h2 { font-size:18px; line-height:16px; text-transform:uppercase; }
+	#page_wrapper h3 { font-size:12px; line-height:12px; font-weight:bold; }
+	#page_wrapper h4 { font-size:12px; line-height:12px; font-weight:lighter; }
+	
+	#page_wrapper blockquote, #page_wrapper blockquote p { font-size: 20px; line-height:24px; font-style:italic; font-weight: lighter; margin: 10px 15px 10px 15px; color:#999; }
+	
+	#page_wrapper .entry-title { font-size:24px; line-height:24px; letter-spacing:0.1em; text-transform:none; }
+
+/*---:[ Facebook Plugin ]:---*/
+.fbFeedbackContent { width:440px !important; }
 
 /*---:[ events calendar ]:---*/
  .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }

@@ -1,4 +1,14 @@
 <?php get_header() ?>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=220809154671406";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <div id="line_holder"></div>
   <div id="page">
     <div id="floater">
@@ -26,8 +36,12 @@
           <div class="dynamic">ect.</div>
           <div class="dynamic">ect</div>
         </div>
-        <?php the_post() ?>
-        <?php the_content() ?>
+		<div id="content_container">
+			<h2 class="entry-title"><?php the_title() ?></h2>
+			<?php the_post() ?>
+			<?php the_content() ?>
+			<div class="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="440"></div>
+		</div>
       </div>
       
         
