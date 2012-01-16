@@ -234,11 +234,11 @@ body { background: #efecd6; }
 #splash .off-state:hover { visibility: hidden; }
 #splash #events:hover img, #splash #classes:hover img, #splash #rent:hover img, #splash #about:hover img { visibility: visible; }
 
-#splash #events, #splash #classes, #splash #about, #splash #rent, #splash #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; text-align: center; }
-#splash #events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 39px; }
-#splash #classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; }
-#splash #rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; }
-#splash #about { height: 120px; width: 120px; top: 139px; left: -145px; padding-top: 35px; }
+#splash #events, #splash #classes, #splash #about, #splash #rent, #splash, #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; }
+#splash #events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 39px; text-align: center; }
+#splash #classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; text-align: center; }
+#splash #rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; text-align: center; }
+#splash #about { height: 120px; width: 120px; top: 139px; left: -145px; padding-top: 35px; text-align: center; }
 #splash #tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px; }
 #splash #tweets h2 { margin-bottom: 10px; }
 #splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
@@ -249,8 +249,8 @@ body { background: #efecd6; }
 #floater { float:right; position:relative; left:-50%; text-align:left;}
 #page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6;}
 #line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
-#name_img {top: 63px; 		left: -17px;}
-#icons {top: 105px; 			left: 632px;}
+#name_img {top: 63px; left: -17px;}
+#icons {top: 105px; left: 632px;}
 #nav_buttons {top: 140px; left: 132px;}
 
 #page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 160px;}
@@ -265,7 +265,7 @@ body { background: #efecd6; }
 #page #youtube {top: 241px;}
 
 
-#fb-t-yt {top: 141px; 		left: 702px;}
+#fb-t-yt {top: 141px;left: 702px;}
 .CMS_input { width: 400px; padding: 20px;}
 .CMS_input p { margin: 10px; text-indent: 25px;}
 #dynamic_bar {width: 240px; float: right; padding: 10px;}
@@ -282,12 +282,12 @@ body { background: #efecd6; }
 /*---:[ soliloquy ]:---*/
 
 	.feed { width: 218px; }
-	.feed .post {  clear: both; font-size: 14px; margin: 10px 0; color:#333; border-bottom: 1px solid #eee; overflow: hidden; }
-      #tweets { text-align: left; font-size: 11px; }
+	.feed .post { clear: both; font-size: 14px; margin: 10px 0; color:#333; border-bottom: 1px solid #eee; overflow: hidden; }
+      #tweets { text-align: left; font-size: 11px; line-height:1.3em; }
       #tweets img { margin-bottom: 5px; }
       .twitter_post img, .twitter_post a { display: none; }
-      .twitter_post { margin-bottom: 15px; }
+      .twitter_post { margin-bottom: 9px; padding-bottom:6px; border-bottom:2px #00FFFF solid;  }
       .twitter_post span { display: block; }	
       .twitter .post_content { display: table-cell }
-      .created-at { font-size:70%; color:#666; clear: both; }
+      .created-at { font-size:50%; color:#666; clear: both; }
       .twitter .screen-name { font-weight: bold; color: #222; float: left; width: 133px; display: block; }

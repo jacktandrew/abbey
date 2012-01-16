@@ -1,35 +1,35 @@
 <?php get_header() ?>
 
-<body id="no_overflow">
+<body ID="no_overflow">
 
-  <div id="splash">
-    <div id="line_holder"></div>
-    <img src="../../abbey/wp-content/uploads/2011/12/splash-crop.png" id="main_img" />
-    <a href="http://www.facebook.com/FremontAbbey?v=app_2344061033" target="_blank" id="icons"></a>
-    <a href="../../abbey/events" id="events">
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-events-off.png" class="off-state" />
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-events-on.png" class="on-state" />    
+  <div ID="splash">
+    <div ID="line_holder"></div>
+    <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-crop.png" ID="main_img" />
+    <a HREF="http://www.facebook.com/FremontAbbey?v=app_2344061033" TARGET="_blank" ID="icons"></a>
+    <a HREF="<?php bloginfo('url'); ?>/events" ID="events">
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-events-off.png" CLASS="off-state" />
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-events-on.png" CLASS="on-state" />    
     </a>
 
-    <a href="../../abbey/classes" id="classes">
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-classes-off.png" class="off-state" />
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-classes-on.png" class="on-state" />
+    <a HREF="<?php bloginfo('url'); ?>/classes" ID="classes">
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-classes-off.png" CLASS="off-state" />
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-classes-on.png" CLASS="on-state" />
     </a>
 
-    <a href="../../abbey/about" id="about">
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-about-off.png" class="off-state" />
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-about-on.png" class="on-state" />
+    <a HREF="<?php bloginfo('url'); ?>/about" ID="about">
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-about-off.png" CLASS="off-state" />
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-about-on.png" CLASS="on-state" />
     </a>
 
-    <a href="../../abbey/rent" id="rent">
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-rent-off.png" class="off-state" />
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-rent-on.png" class="on-state" />
+    <a HREF="<?php bloginfo('url'); ?>/rent" ID="rent">
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-rent-off.png" CLASS="off-state" />
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-rent-on.png" CLASS="on-state" />
     </a>
 
-    <a href="../../abbey/tweets" id="tweets">
-	<img src="../../abbey/wp-content/uploads/2011/12/splash-tweets.png" />
-	<div class="feed"></div>
-	<div class="twitter_list"></div>
+    <a HREF="<?php bloginfo('url'); ?>/tweets" ID="tweets">
+	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-tweets.png" />
+	<div CLASS="feed"></div>
+	<div CLASS="twitter_list"></div>
     </a>
 
   <svg id="svg_box" viewBox="0 0 200 4000" height="2000" width="4000" xmlns="http://www.w3.org/2000/svg" version="1.1">    
