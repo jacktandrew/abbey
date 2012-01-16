@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Splash Page
+*/
+?>
 <?php get_header() ?>
 
 <body ID="no_overflow">
