@@ -1,54 +1,52 @@
-<?php get_header() ?>
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Eleven
+ */
 
-<body ID="no_overflow">
+get_header(); ?>
 
-  <div ID="splash">
-    <div ID="line_holder"></div>
-    <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-crop.png" ID="main_img" />
-    <a HREF="http://www.facebook.com/FremontAbbey?v=app_2344061033" TARGET="_blank" ID="icons"></a>
-    <a HREF="<?php bloginfo('url'); ?>/events" ID="events">
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-events-off.png" CLASS="off-state" />
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-events-on.png" CLASS="on-state" />    
-    </a>
+		<div id="primary">
+			<div id="content" role="main">
 
-    <a HREF="<?php bloginfo('url'); ?>/classes" ID="classes">
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-classes-off.png" CLASS="off-state" />
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-classes-on.png" CLASS="on-state" />
-    </a>
+			<?php if ( have_posts() ) : ?>
 
-    <a HREF="<?php bloginfo('url'); ?>/about" ID="about">
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-about-off.png" CLASS="off-state" />
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-about-on.png" CLASS="on-state" />
-    </a>
+				<?php twentyeleven_content_nav( 'nav-above' ); ?>
 
-    <a HREF="<?php bloginfo('url'); ?>/rent" ID="rent">
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-rent-off.png" CLASS="off-state" />
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-rent-on.png" CLASS="on-state" />
-    </a>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-    <a HREF="<?php bloginfo('url'); ?>/tweets" ID="tweets">
-	<img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-tweets.png" />
-	<div CLASS="feed"></div>
-	<div CLASS="twitter_list"></div>
-    </a>
+					<?php get_template_part( 'content', get_post_format() ); ?>
 
-  <svg id="svg_box" viewBox="0 0 200 4000" height="2000" width="4000" xmlns="http://www.w3.org/2000/svg" version="1.1">    
-    
-    <line x1=""/>
+				<?php endwhile; ?>
 
-    <line x1="-100" y1="0" x2="750" y2="850"
-                stroke-width="1" stroke="black"  />
+				<?php twentyeleven_content_nav( 'nav-below' ); ?>
 
-    <line x1="2300" y1="1679" x2="4740" y2="4069"
-                stroke-width="28" stroke="ff6e00"  />
+			<?php else : ?>
 
-    <polygon fill="#efecd6" stroke="#000" stroke-width="0" 
-              points="1605,1700
-                      2295,1700
-                      4735,4060                      
-                      1605,4060
-                      " />
-  </svg>
-  </div>
+				<article id="post-0" class="post no-results not-found">
+					<header class="entry-header">
+						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+					</header><!-- .entry-header -->
 
-</body>
+					<div class="entry-content">
+						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
+						<?php get_search_form(); ?>
+					</div><!-- .entry-content -->
+				</article><!-- #post-0 -->
+
+			<?php endif; ?>
+
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
