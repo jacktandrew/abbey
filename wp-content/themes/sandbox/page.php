@@ -1,6 +1,7 @@
 <?php get_header() ?>
-  <div id="line_holder"></div>
+ <div id="line_holder"></div>
   <div id="page">
+
     <div id="floater">
 
       <a href="../../abbey/"><img src="../../abbey/wp-content/uploads/2012/01/name.png" id="name_img"/></a>
@@ -33,5 +34,5 @@
         
     </div><!-- #floater -->
   </div><!-- #page -->
-
+ 
 <!-- <?php get_footer() ?>

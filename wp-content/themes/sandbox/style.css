@@ -244,10 +244,10 @@ body { background: #efecd6; }
 #splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
 
 /*---:[ typical pages ]:---*/
-#line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 1500px; margin-top: 190px; }
-#page {position:relative; left:50%;}
+#line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 100%; margin-top: 190px; }
+#page {position:relative; left:50%; width: 630px;}
 #floater { float:right; position:relative; left:-50%; text-align:left;}
-#page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6;}
+#page_wrapper {width: 700px; height: 100%; margin-top: 170px; background: #efecd6;}
 #line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
 #name_img {top: 63px; 		left: -17px;}
 #icons {top: 105px; 			left: 632px;}
