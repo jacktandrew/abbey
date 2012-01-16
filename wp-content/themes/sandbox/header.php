@@ -10,9 +10,9 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.svg_.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/events.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.soliloquy.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/jquery.svg_.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/events.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/jquery.soliloquy.js"></script>
 
 <script>
  $(function(){  
