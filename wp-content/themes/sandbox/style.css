@@ -564,7 +564,7 @@ body { background:#efecd6; }
 #splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
 
 /*---:[ typical pages ]:---*/
-#line_holder {  position: absolute; background-image: url("images/diag.png"); background-repeat:repeat; z-index: -10; height: 1000px; width: 1500px; margin-top: 170px; }
+/*#line_holder {  position: absolute; background-image: url("images/diag.png"); background-repeat:repeat; z-index: -10; height: 1000px; width: 1500px; margin-top: 170px; }*/
 #page {position:relative; left:50%;}
 #floater { float:right; position:relative; left:-50%; text-align:left;}
 		#fb-like-box { position:relative; top:70px; left:-120px; color:#666; }
@@ -572,7 +572,7 @@ body { background:#efecd6; }
 #line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
 #name_img {top: 53px; left: -17px;}
 #icons {top: 95px; left: 632px;}
-#nav_buttons {top: 130px; left: 132px;}
+/*#nav_buttons {top: 130px; left: 132px;}*/
 
 #page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 150px;}
 #page #events {left: 132px;}
