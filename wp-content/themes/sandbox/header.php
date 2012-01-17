@@ -3,7 +3,14 @@
 <head profile="http://gmpg.org/xfn/11">
 	<title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
+
+	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '5' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-events.css<?php } else { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-generic.css<?php } ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '8' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-classes.css<?php } else { ?><?php } ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '14' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-rent.css<?php } else { ?><?php } ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '16' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-about.css<?php } else { ?><?php } ?>" />
+
 <?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
