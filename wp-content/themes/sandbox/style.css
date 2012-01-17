@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 THEME NAME: Sandbox
 THEME URI: http://www.plaintxt.org/themes/sandbox/
@@ -222,299 +221,7 @@ padding:0;
 
 * { margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif; }
 body { background: #efecd6; }
-#no_overflow { overflow: hidden; }
-#splash p { margin: 10px; }
-
-#splash { position: absolute; top: 40%; left: 50%;  overflow: visible;   }
-#splash #line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 1000px; width: 3000px; z-index: -1; }
-#splash #main_img { position: absolute; top: -250px; left: -450px; }
-#splash #icons { height: 25px; width: 155px; position: absolute; top: -211px; left: -67px; }
-
-#splash .on-state, .off-state { position: absolute; top: 0px; left: 0px; }
-#splash .on-state { visibility: hidden; }
-#splash .off-state:hover { visibility: hidden; }
-#splash #events:hover img, #splash #classes:hover img, #splash #rent:hover img, #splash #about:hover img { visibility: visible; }
-
-#splash #events, #splash #classes, #splash #about, #splash #rent, #splash #tweets { position: absolute; z-index: 1; font-family: sans-serif; color: #939598; text-align: center; }
-#splash #events { height: 120px; width: 240px; top: -141px; left: -265px; padding-top: 39px; }
-#splash #classes { height: 120px; width: 180px; top: -1px; left: -205px; padding-top: 40px; }
-#splash #rent { height: 120px; width: 120px; top: -81px; left: -5px; padding-top: 35px; }
-#splash #about { height: 120px; width: 120px; top: 139px; left: -145px; padding-top: 35px; }
-#splash #tweets { height: 575px; width: 200px; top: 60px; left: -5px; background: #efecd6; padding: 20px; }
-#splash #tweets h2 { margin-bottom: 10px; }
-#splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
-
-/*---:[ typical pages ]:---*/
-#line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 100%; margin-top: 190px; }
-#page {position:relative; left:50%; width: 630px;}
-#floater { float:right; position:relative; left:-50%; text-align:left;}
-#page_wrapper {width: 700px; height: 100%; margin-top: 170px; background: #efecd6;}
-#line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
-#name_img {top: 63px; 		left: -17px;}
-#icons {top: 105px; 			left: 632px;}
-#nav_buttons {top: 140px; left: 132px;}
-
-#page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 160px;}
-#page #events {left: 132px;}
-#page #classes {left: 272px;}
-#page #rent {left: 412px;}
-#page #about {left: 552px;}
-
-#page #facebook, #page #twitter, #page #youtube {position: absolute; left: 702px; height: 50px; width: 50px;}
-#page #facebook {top: 141px;}
-#page #twitter {top: 191px;}
-#page #youtube {top: 241px;}
-
-
-#fb-t-yt {top: 141px; 		left: 702px;}
-.CMS_input { width: 400px; padding: 20px;}
-.CMS_input p { margin: 10px; text-indent: 25px;}
-#dynamic_bar {width: 240px; float: right; padding: 10px;}
-#dynamic_bar img { margin: 10px;}
-#dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
-#dynamic_bar .dynamic {background: #939598; width: 220px; height: 120px; margin: 10px 0;}
-
-/*---:[ events calendar ]:---*/
- .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }
- .anEvent h3 { color: #3B5998; font-size: 1.17em; }
- .anEvent h4 { color: #444; }
-
-
-/*---:[ soliloquy ]:---*/
-
-	.feed { width: 218px; }
-	.feed .post {  clear: both; font-size: 14px; margin: 10px 0; color:#333; border-bottom: 1px solid #eee; overflow: hidden; }
-      #tweets { text-align: left; font-size: 11px; }
-      #tweets img { margin-bottom: 5px; }
-      .twitter_post img, .twitter_post a { display: none; }
-      .twitter_post { margin-bottom: 15px; }
-      .twitter_post span { display: block; }	
-      .twitter .post_content { display: table-cell }
-      .created-at { font-size:70%; color:#666; clear: both; }
-=======
-/*
-THEME NAME: Sandbox
-THEME URI: http://www.plaintxt.org/themes/sandbox/
-DESCRIPTION: Rich with powerful and dynamic semantic class selectors, Sandbox is a canvas for CSS artists
-VERSION: 1.6.1
-AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="http://www.plaintxt.org/">Scott Allan Wallick</a>
-AUTHOR URI:
-TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
-*/
-
-/* Two-column with sidebar on left from the /examples/ folder  */
-@import url('examples/2c-l.css');
-
-/* Just some example content */
-div.skip-link {
-position:absolute;
-right:1em;
-top:1em;
-}
-
-div#menu {
-background:#EEE;
-height:1.5em;
-margin:1em 0;
-width:100%;
-}
-
-div#menu ul,div#menu ul ul {
-line-height:1;
-list-style:none;
-margin:0;
-padding:0;
-}
-
-div#menu ul a {
-display:block;
-margin-right:1em;
-padding:0.2em 0.5em;
-text-decoration:none;
-}
-
-div#menu ul ul ul a {
-font-style:italic;
-}
-
-div#menu ul li ul {
-left:-999em;
-position:absolute;
-}
-
-div#menu ul li:hover ul {
-left:auto;
-}
-
-.entry-title,.entry-meta {
-clear:both;
-}
-
-div#primary {
-margin-top:2em;
-}
-
-form#commentform .form-label {
-margin:1em 0 0;
-}
-
-form#commentform span.required {
-background:#fff;
-color:#c30;
-}
-
-form#commentform,form#commentform p {
-padding:0;
-}
-
-input#author,input#email,input#url,textarea#comment {
-padding:0.2em;
-}
-
-div.comments ol li {
-margin:0 0 3.5em;
-}
-
-textarea#comment {
-height:13em;
-margin:0 0 0.5em;
-overflow:auto;
-width:66%;
-}
-
-.alignright,img.alignright{
-float:right;
-margin:1em 0 0 1em;
-}
-
-.alignleft,img.alignleft{
-float:left;
-margin:1em 1em 0 0;
-}
-
-.aligncenter,img.aligncenter{
-display:block;
-margin:1em auto;
-text-align:center;
-}
-
-div.gallery {
-clear:both;
-height:180px;
-margin:1em 0;
-width:100%;
-}
-
-p.wp-caption-text{
-font-style:italic;
-}
-
-div.gallery dl{
-margin:1em auto;
-overflow:hidden;
-text-align:center;
-}
-
-div.gallery dl.gallery-columns-1 {
-width:100%;
-}
-
-div.gallery dl.gallery-columns-2 {
-width:49%;
-}
-
-div.gallery dl.gallery-columns-3 {
-width:33%;
-}
-
-div.gallery dl.gallery-columns-4 {
-width:24%;
-}
-
-div.gallery dl.gallery-columns-5 {
-width:19%;
-}
-
-div#nav-above {
-margin-bottom:1em;
-}
-
-div#nav-below {
-margin-top:1em;
-}
-
-div#nav-images {
-height:150px;
-margin:1em 0;
-}
-
-div.navigation {
-height:1.25em;
-}
-
-div.navigation div.nav-next {
-float:right;
-text-align:right;
-}
-
-div.sidebar h3 {
-font-size:1.2em;
-}
-
-div.sidebar input#s {
-width:7em;
-}
-
-div.sidebar li {
-list-style:none;
-margin:0 0 2em;
-}
-
-div.sidebar li form {
-margin:0.2em 0 0;
-padding:0;
-}
-
-div.sidebar ul ul {
-margin:0 0 0 1em;
-}
-
-div.sidebar ul ul li {
-list-style:disc;
-margin:0;
-}
-
-div.sidebar ul ul ul {
-margin:0 0 0 0.5em;
-}
-
-div.sidebar ul ul ul li {
-list-style:circle;
-}
-
-div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
-float:left;
-}
-
-div#header,div#footer {
-text-align:center;
-}
-
-input#author,input#email,input#url,div.navigation div {
-width:50%;
-}
-
-div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
-margin:0;
-padding:0;
-}
-
-
-
-
-
-* { margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif; }
-body { background: #efecd6; }
+a:hover {opacity: .6;}
 #no_overflow { overflow: hidden; }
 #splash p { margin: 10px; }
 
@@ -547,11 +254,33 @@ body { background: #efecd6; }
 #icons {top: 105px; left: 632px;}
 #nav_buttons {top: 140px; left: 132px;}
 
-#page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 160px;}
+.nav_links {position: absolute; height: 30px; width: 130px; top: 161px; }
+.nav_links img { position: absolute; top: -20px; left: 0px;}
+.nav_links div {
+	display: none; 
+	color: #666;
+	background: #fff;
+	padding: 6px 11px 10px;
+	height: 14px; width: 108px;
+	}
+.nav_links:hover {opacity: 1;}
+.nav_links div:hover {color: #999;}
+
+
+
 #page #events {left: 132px;}
 #page #classes {left: 272px;}
 #page #rent {left: 412px;}
 #page #about {left: 552px;}
+
+#primary .widget_nav_menu li {margin: 10px 66px 10px 20px;}
+#primary .widget_nav_menu a {color: #666; font-weight: lighter;}
+#primary .widget_nav_menu {position: absolute; top: 191px; background: #fff; display: none;}
+
+#primary #nav_menu-3 {left: 79px;}
+#primary #nav_menu-4 {left: 219px;}
+#primary #nav_menu-5 {left: 395px;}
+#primary #nav_menu-6 {left: 523px;}
 
 #page #facebook, #page #twitter, #page #youtube {position: absolute; left: 702px; height: 50px; width: 50px;}
 #page #facebook {top: 141px;}
@@ -564,8 +293,11 @@ body { background: #efecd6; }
 .CMS_input p { margin: 10px; text-indent: 25px;}
 #dynamic_bar {width: 240px; float: right; padding: 10px;}
 #dynamic_bar img { margin: 10px;}
-#dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
-#dynamic_bar .dynamic {background: #939598; width: 220px; height: 120px; margin: 10px 0;}
+#dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px; min-height: 300px;}
+
+#dynamic_bar #secondary #text-3, #dynamic_bar #secondary #text-4 {background: #939598; margin: 10px 0;}
+#dynamic_bar #secondary .textwidget { width: 220px; }
+#dynamic_bar .sidebar { width: 230px;}
 
 /*---:[ events calendar ]:---*/
  .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }
@@ -584,5 +316,4 @@ body { background: #efecd6; }
       .twitter_post span { display: block; }	
       .twitter .post_content { display: table-cell }
       .created-at { font-size:50%; color:#666; clear: both; }
->>>>>>> cfbe174997c794e5e7d54e5b7c6a0d830496a2e4
       .twitter .screen-name { font-weight: bold; color: #222; float: left; width: 133px; display: block; }

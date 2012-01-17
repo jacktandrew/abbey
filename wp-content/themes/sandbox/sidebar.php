@@ -1,4 +1,4 @@
-  <!-- <div id="primary" class="sidebar">
+<div id="primary" class="sidebar">
     <ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
