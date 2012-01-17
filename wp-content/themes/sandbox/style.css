@@ -220,12 +220,12 @@ padding:0;
 
 
 * { margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif; }
-body { background: #efecd6; }
+body { background:#efecd6; }
 #no_overflow { overflow: hidden; }
 #splash p { margin: 10px; }
 
 #splash { position: absolute; top: 40%; left: 50%;  overflow: visible;   }
-#splash #line_holder { position: absolute; background-image: url("/abbey/wp-content/uploads/2011/12/diag.png"); top: -100px; left: -1335px; height: 1000px; width: 3000px; z-index: -1; }
+#splash #line_holder { position: absolute; background-image: url("images/diag.png"); top: -310px; left: -1335px; height: 1000px; width: 3000px; z-index: -1; }
 #splash #main_img { position: absolute; top: -250px; left: -450px; }
 #splash #icons { height: 25px; width: 155px; position: absolute; top: -211px; left: -67px; }
 
@@ -244,49 +244,51 @@ body { background: #efecd6; }
 #splash #svg_box { margin: -682px 0 0 -2758px; z-index: 5; }
 
 /*---:[ typical pages ]:---*/
-#line_holder {  position: absolute; background-image: url("/abbey/wp-content/uploads/2012/01/h-line-red.png"); z-index: -10; height: 1000px; width: 1500px; margin-top: 190px; }
+#line_holder {  position: absolute; background-image: url("images/diag.png"); background-repeat:repeat; z-index: -10; height: 1000px; width: 1500px; margin-top: 170px; }
 #page {position:relative; left:50%;}
 #floater { float:right; position:relative; left:-50%; text-align:left;}
-#page_wrapper {width: 700px; height: 1000px; margin-top: 170px; background: #efecd6; color:#4d4d4d;}
+		#fb-like-box { position:relative; top:70px; left:-120px; color:#666; }
+#page_wrapper {width: 700px; height: 1000px; margin-top: 150px; background: #efecd6; color:#4d4d4d;}
 #line_holder, #page, #name_img, #icons, #nav_buttons, #fb-t-yt { position: absolute; }
-#name_img {top: 63px; left: -17px;}
-#icons {top: 105px; left: 632px;}
-#nav_buttons {top: 140px; left: 132px;}
+#name_img {top: 53px; left: -17px;}
+#icons {top: 95px; left: 632px;}
+#nav_buttons {top: 130px; left: 132px;}
 
-#page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 160px;}
+#page #events, #page #classes, #page #rent, #page #about {position: absolute; height: 30px; width: 130px; top: 150px;}
 #page #events {left: 132px;}
 #page #classes {left: 272px;}
 #page #rent {left: 412px;}
 #page #about {left: 552px;}
 
 #page #facebook, #page #twitter, #page #youtube {position: absolute; left: 702px; height: 50px; width: 50px;}
-#page #facebook {top: 141px;}
-#page #twitter {top: 191px;}
-#page #youtube {top: 241px;}
+#page #facebook {top: 131px;}
+#page #twitter {top: 181px;}
+#page #youtube {top: 231px;}
 
 
-#fb-t-yt {top: 141px;left: 702px;}
+#fb-t-yt {top: 131px;left: 702px;}
 .CMS_input { width: 400px; padding: 20px;}
 .CMS_input p { margin: 10px; text-indent: 25px;}
 
-#content_container { width:440px; float:left; }
+#content_container { width:440px; float:left; margin:0 10px; }
 
-#dynamic_bar {width: 240px; float: right; padding: 10px;}
-#dynamic_bar img { margin: 10px 0;}
+#dynamic_bar {width: 220px; float:right; padding:10px;}
+#dynamic_bar img { margin: 10px 0 0;}
 #dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px;}
-#dynamic_bar .dynamic {background: #939598; width: 220px; height: 120px; margin: 10px 0;}
+#dynamic_bar .dynamic {background: none; width: 220px; height: 120px; margin: 10px 0;}
+li {list-style-type:none;}
 
 /*---:[ Typography ]:---*/
 
 	#page_wrapper p { font-size:11px; line-height:14px; margin-bottom:10px }
-	#page_wrapper h1 { font-size:24px; line-height:24px; }
-	#page_wrapper h2 { font-size:18px; line-height:16px; text-transform:uppercase; }
+	#page_wrapper h1 { font:24px futura, Helvetica, sans-serif lighter; color:#000; line-height:26px; text-transform:uppercase; }
+	#page_wrapper h2 { font:18px futura, Helvetica, sans-serif lighter; line-height:16px; letter-spacing:0.2em; text-transform:uppercase; }
 	#page_wrapper h3 { font-size:12px; line-height:12px; font-weight:bold; }
 	#page_wrapper h4 { font-size:12px; line-height:12px; font-weight:lighter; }
 	
-	#page_wrapper blockquote, #page_wrapper blockquote p { font-size: 20px; line-height:24px; font-style:italic; font-weight: lighter; margin: 10px 15px 10px 15px; color:#999; }
+	#page_wrapper blockquote, #page_wrapper blockquote p { font-size: 14px; line-height:20px; font-style:italic; font-weight: lighter; margin: 10px 10px; }
 	
-	#page_wrapper .entry-title { font-size:24px; line-height:24px; letter-spacing:0.1em; text-transform:none; }
+	#page_wrapper .entry-title { font-size:32px; line-height:36px; letter-spacing:0.2em; margin-top:10px; }
 
 /*---:[ Facebook Plugin ]:---*/
 .fbFeedbackContent { width:440px !important; }
@@ -304,8 +306,8 @@ body { background: #efecd6; }
       #tweets { text-align: left; font-size: 11px; line-height:1.3em; }
       #tweets img { margin-bottom: 5px; }
       .twitter_post img, .twitter_post a { display: none; }
-      .twitter_post { margin-bottom: 9px; padding-bottom:6px; border-bottom:2px #00FFFF solid;  }
+      .twitter_post { margin-bottom: 9px; padding-bottom:7px; border-bottom:2px #00FFFF solid;  }
       .twitter_post span { display: block; }	
       .twitter .post_content { display: table-cell }
-      .created-at { font-size:50%; color:#666; clear: both; }
+      .created-at { font-size:60%; color:#666; clear: both; }
       .twitter .screen-name { font-weight: bold; color: #222; float: left; width: 133px; display: block; }

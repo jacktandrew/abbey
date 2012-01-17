@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <body>
-<div id="fb-root"></div>
+<div ID="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -9,38 +9,43 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-  <div id="line_holder"></div>
-  <div id="page">
-    <div id="floater">
-
-      <a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/name.png" id="name_img"/></a>
-      <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/icons.png" id="icons" />
+  <div ID="line_holder"></div>
+  <div ID="page">
+    <div ID="floater">
+		<div ID="fb-like-box" class="fb-like" data-href="http://abbey.checksteveout.com/" data-send="false" data-layout="button_count" data-width="600" data-show-faces="false" data-font="verdana"></div>
+      <a HREF="<?php bloginfo('url'); ?>/"><img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/name.png" ID="name_img"/></a>
+      <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/icons.png" ID="icons" />
       <br/>
-      <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/nav_buttons.png" id="nav_buttons"/>
+      <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/nav_buttons.png" ID="nav_buttons"/>
 
-        <a href="<?php bloginfo('url'); ?>/events" id="events"></a>
-        <a href="<?php bloginfo('url'); ?>/classes" id="classes"></a>
-        <a href="<?php bloginfo('url'); ?>/rent" id="rent"></a>
-        <a href="<?php bloginfo('url'); ?>/about" id="about"></a>
+        <a HREF="<?php bloginfo('url'); ?>/events" ID="events"></a>
+        <a HREF="<?php bloginfo('url'); ?>/classes" ID="classes"></a>
+        <a HREF="<?php bloginfo('url'); ?>/rent" ID="rent"></a>
+        <a HREF="<?php bloginfo('url'); ?>/about" ID="about"></a>
         
-      <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/fb-t-yt.png" id="fb-t-yt" />
+      <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/fb-t-yt.png" ID="fb-t-yt" />
       
-        <a href="http://www.facbook.com/" id="facebook"></a>
-        <a href="http://www.twitter.com/" id="twitter"></a>
-        <a href="http://www.youtube.com" id="youtube"></a>
+        <a HREF="http://www.facbook.com/" ID="facebook"></a>
+        <a HREF="http://www.twitter.com/" ID="twitter"></a>
+        <a HREF="http://www.youtube.com" ID="youtube"></a>
       
-      <div id="page_wrapper">
-        <div id="dynamic_bar">
-          <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/tweets_page.png" />
-          <div class="feed"></div>
-          <div class="dynamic">ect.</div>
-          <div class="dynamic">ect</div>
+      <div ID="page_wrapper">
+        <div ID="dynamic_bar">
+          <h2 STYLE="margin:20px 0 5px -2px;">Tweets</h2>
+          <div CLASS="feed"></div>
+          <div CLASS="dynamic">
+		  	<?php get_sidebar() ?>
+		  </div>
         </div>
-		<div id="content_container">
-			<h2 class="entry-title"><?php the_title() ?></h2>
+		<div ID="content_container">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin secondary sidebar widgets ?>
+
+			<?php endif; // end secondary sidebar widgets  ?>
+
+			<h1 CLASS="entry-title"><?php the_title() ?></h1>
 			<?php the_post() ?>
 			<?php the_content() ?>
-			<div class="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="440"></div>
+			<div STYLE="margin-top:15px;" CLASS="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="440"></div>
 		</div>
       </div>
       
