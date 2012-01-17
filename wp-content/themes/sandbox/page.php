@@ -18,7 +18,6 @@
       <br/>
       <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/nav_buttons.png" ID="nav_buttons"/>
 
-<<<<<<< HEAD
       <a href="<?php bloginfo('url'); ?>/events" id="events" class="nav_links">
         <div>
           <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/events_tzoid.png" />
@@ -51,21 +50,13 @@
           <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
           <?php endif; // end primary sidebar widgets  ?>
         </div>
-        
-=======
-        <a HREF="<?php bloginfo('url'); ?>/events" ID="events"></a>
-        <a HREF="<?php bloginfo('url'); ?>/classes" ID="classes"></a>
-        <a HREF="<?php bloginfo('url'); ?>/rent" ID="rent"></a>
-        <a HREF="<?php bloginfo('url'); ?>/about" ID="about"></a>
->>>>>>> 3d10743e52500ff0ed759318e8929a97b52495b7
-        
+                
       <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/fb-t-yt.png" ID="fb-t-yt" />
       
         <a HREF="http://www.facbook.com/" ID="facebook"></a>
         <a HREF="http://www.twitter.com/" ID="twitter"></a>
         <a HREF="http://www.youtube.com" ID="youtube"></a>
       
-<<<<<<< HEAD
       <div id="page_wrapper">
         <div id="dynamic_bar">
           <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/tweets_page.png" />
@@ -76,20 +67,8 @@
             <?php endif; // end secondary sidebar widgets  ?>
           </div>
 
-=======
-      <div ID="page_wrapper">
-        <div ID="dynamic_bar">
-          <h2 STYLE="margin:20px 0 5px -2px;">Tweets</h2>
-          <div CLASS="feed"></div>
-          <div CLASS="dynamic">
-		  	<?php get_sidebar() ?>
-		  </div>
->>>>>>> 3d10743e52500ff0ed759318e8929a97b52495b7
         </div>
 		<div ID="content_container">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin secondary sidebar widgets ?>
-
-			<?php endif; // end secondary sidebar widgets  ?>
 
 			<h1 CLASS="entry-title">
 				<?php
