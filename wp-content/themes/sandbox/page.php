@@ -12,7 +12,7 @@
   <div ID="line_holder"></div>
   <div ID="page">
     <div ID="floater">
-		<div ID="fb-like-box" class="fb-like" data-href="http://abbey.checksteveout.com/" data-send="false" data-layout="button_count" data-width="600" data-show-faces="false" data-font="verdana"></div>
+		<div ID="fb-like-box" CLASS="fb-like" data-href="http://abbey.checksteveout.com/" data-send="false" data-layout="button_count" data-width="600" data-show-faces="false" data-font="verdana"></div>
       <a HREF="<?php bloginfo('url'); ?>/"><img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/name.png" ID="name_img"/></a>
       <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/icons.png" ID="icons" />
       <br/>
@@ -42,7 +42,12 @@
 
 			<?php endif; // end secondary sidebar widgets  ?>
 
-			<h1 CLASS="entry-title"><?php the_title() ?></h1>
+			<h1 CLASS="entry-title">
+				<?php
+				echo empty( $post->post_parent ) ? !get_the_title( $post->ID ) : get_the_title( $post->ID );
+				?>
+			</h1>
+
 			<?php the_post() ?>
 			<?php the_content() ?>
 			<div STYLE="margin-top:15px;" CLASS="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="440"></div>
