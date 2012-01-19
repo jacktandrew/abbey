@@ -6,20 +6,15 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
 
-	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '5' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-events.css<?php } else { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-generic.css<?php } ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '8' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-classes.css<?php } else { ?><?php } ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '14' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-rent.css<?php } else { ?><?php } ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php if ( is_tree( '16' ) ) { ?><?php bloginfo('url') ?>/wp-content/themes/sandbox/style-about.css<?php } else { ?><?php } ?>" />
-
 <?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="wp-content/uploads/2012/01/jquery.js"></script>
   <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.svg_.js"></script>
   <script type="text/javascript" src="wp-content/uploads/2011/12/events.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2012/01/application.js"></script>
+  <script type="text/javascript" src="wp-content/themes/sandbox/application.js"></script>
   <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.soliloquy.js"></script>
 
 
@@ -33,21 +28,31 @@
 });
 </script>
 
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '154293281341644',
-            status     : true, 
-            cookie     : true,
-            xfbml      : true,
-            oauth      : true,
-          });
-        };
-        (function(d){
-           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           d.getElementsByTagName('head')[0].appendChild(js);
-         }(document));
-      </script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=220809154671406";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '154293281341644',
+      status     : true, 
+      cookie     : true,
+      xfbml      : true,
+      oauth      : true,
+    });
+  };
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
 </head>

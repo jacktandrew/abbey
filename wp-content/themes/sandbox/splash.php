@@ -8,7 +8,7 @@ Template Name: Splash Page
 <body ID="no_overflow">
 
   <div ID="splash">
-    <div ID="line_holder"></div>
+    <div ID="splash_line_holder"></div>
     <img SRC="<?php bloginfo('url'); ?>/wp-content/uploads/2011/12/splash-crop.png" ID="main_img" />
     <a HREF="http://www.facebook.com/FremontAbbey?v=app_2344061033" TARGET="_blank" ID="icons"></a>
     <a HREF="<?php bloginfo('url'); ?>/events" ID="events">
