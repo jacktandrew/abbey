@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Wide
+*/
+?>
 <?php get_header() ?>
 <body>
 <div ID="fb-root"></div>
@@ -57,19 +62,10 @@
         <a HREF="http://www.twitter.com/" ID="twitter"></a>
         <a HREF="http://www.youtube.com" ID="youtube"></a>
       
-      <div id="page_wrapper">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(3) ) : // begin secondary sidebar widgets ?>
-        <?php endif; // end secondary sidebar widgets  ?>
-
-        <div id="dynamic_bar">
-          <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/01/tweets_page.png" />
-          <div class="feed"></div>
-
-          <div id="secondary" class="sidebar">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin secondary sidebar widgets ?>
-            <?php endif; // end secondary sidebar widgets  ?>
-          </div>
-        </div>
+      <div id="wide_page">
+        <div id="page_wrapper">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(3) ) : // begin secondary sidebar widgets ?>
+          <?php endif; // end secondary sidebar widgets  ?>
 
         <h1 CLASS="entry-title">
           <?php
@@ -77,20 +73,22 @@
           ?>
         </h1>
 
-
-
-
-        <div ID="content_container"></div>
-
-
-
-			<?php the_post() ?>
-			<?php the_content() ?>
-			<div STYLE="margin-top:15px;" CLASS="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="680"></div>
-		</div>
-      </div>
+        <div id="dynamic_bar">
+          <div id="secondary" class="sidebar">
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin secondary sidebar widgets ?>
+            <?php endif; // end secondary sidebar widgets  ?>
+          </div>
+        </div>
       
-        
+        <div ID="content_container">      
+          <?php the_post() ?>
+          <?php the_content() ?>
+        </div>
+
+        <div STYLE="margin-top:15px;" CLASS="fb-comments" data-href="<?php the_permalink() ?>" data-num-posts="4" data-width="700"></div>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
 <!-- <?php get_sidebar(); ?>

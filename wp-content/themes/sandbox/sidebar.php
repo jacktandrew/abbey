@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div id="primary" class="sidebar">
     <ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
@@ -65,11 +64,3 @@
 <?php endif; // end secondary sidebar widgets  ?>
     </ul>
   </div>
-=======
-<div id="primary" class="dynamic">
-
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
-
-<?php endif; // end primary sidebar widgets  ?>
-  </div>
->>>>>>> 3d10743e52500ff0ed759318e8929a97b52495b7
