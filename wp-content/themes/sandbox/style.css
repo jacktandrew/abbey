@@ -304,15 +304,6 @@ li {list-style-type:none;}
 #dynamic_bar .dynamic {background: none; width: 220px; height: 120px; margin: 10px 0;}
 #wide_page #dynamic_bar .sidebar { width: 230px;}
 
-
-
-/*---:[ Footer ]:---*/
-#footer {color: #555; border-top: 1px solid #222;}
-#footer h3, #footer h5 {font-family: helvetica; font-weight: lighter; margin: 3px;}
-#footer p, #footer img {float: right;}
-#footer p {font-size: 9px; text-align: right; margin: -35px -160px;}
-#footer img {height: 45px; margin: -40px -210px; opacity: .6;}
-
 /*---:[ Typography ]:---*/
 
 	#page_wrapper p { font-size:11px; line-height:14px; margin-bottom:10px }
@@ -329,9 +320,17 @@ li {list-style-type:none;}
 .fbFeedbackContent { width:440px !important; }
 
 /*---:[ events calendar ]:---*/
- .anEvent { border-bottom: 1px solid #ccc; width: 300px; margin: 5px; padding: 10px; }
- .anEvent h3 { color: #3B5998; font-size: 1.17em; }
- .anEvent h4 { color: #444; }
+#refresh_events { border: 1px solid black; margin: 3px; padding: 2px; float: right;}
+#refresh_events:hover {color: #222; background: #777;}
+#calendar_event_box .aDay {margin-top: 10px;}
+#calendar_event_box .anEvent {border-bottom: 1px dotted #999; width: 340px; margin: 0; padding: 5px 0 10px;}
+#calendar_event_box {margin: 15px 10px 10px 10px; width: 340px; border: 1px dotted #999;}
+
+#calendar_event_box h2, #calendar_event_box h4, #calendar_event_box h5 {font-family: sans-serif; }                  
+#calendar_event_box h2 { font-size: 17px; margin-left: 15px; color: #222;}
+#calendar_event_box h4, #calendar_event_box h5 { font-size: 14px; margin-left: 25px; color: #444; padding: 4px 0;}
+#calendar_event_box h5 {color: #222;}
+
 
 
 /*---:[ soliloquy ]:---*/
@@ -345,3 +344,10 @@ li {list-style-type:none;}
       .twitter_post span { display: block; }	
       .twitter .post_content { display: table-cell }
       .created-at { font-size:60%; color:#666; clear: both; }
+      
+/*---:[ Footer ]:---*/
+#footer {color: #555; border-top: 1px solid #666;}
+#footer h3, #footer h5 {font-family: helvetica; font-weight: lighter; margin: 3px;}
+#footer p, #footer img {float: right;}
+#footer p {font-size: 9px; text-align: right; margin: -35px -160px;}
+#footer img {height: 45px; margin: -40px -210px; opacity: .6;}

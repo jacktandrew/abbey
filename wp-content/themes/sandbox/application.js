@@ -20,26 +20,31 @@ dropDownMenu('#about',   '#nav_menu-6');
 
 // changes the color of the lines according to the title of the page
   function backgroundSwap(pageTitle, imgFile){
-  //  console.log(pageTitle);
-  //  console.log($('title').html().slice(0,4));
     if($('title').html().slice(0,4) === pageTitle){
       $('#line_holder').css('background-image', imgFile)
-      console.log($('#line_holder').css('background-image', imgFile));
     }
   };
 
-backgroundSwap('Clas', "url('../abbey/wp-content/uploads/2012/01/diag-classes.png')");
-backgroundSwap('Even', "url('../abbey/wp-content/uploads/2012/01/diag-events.png')");
-backgroundSwap('Rent', "url('../abbey/wp-content/uploads/2012/01/diag-rent.png')");
-backgroundSwap('Abou', "url('../abbey/wp-content/uploads/2012/01/diag-about.png')");
-
+backgroundSwap('Clas', "url('wp-content/themes/sandbox/images/diag-classes.png')");
+backgroundSwap('Even', "url('wp-content/themes/sandbox/images/diag-events.png')");
+backgroundSwap('Rent', "url('wp-content/themes/sandbox/images/diag-rent.png')");
+backgroundSwap('Abou', "url('wp-content/themes/sandbox/images/diag-about.png')");
 
 // setting the wrapper height
-  footerOffSet = $('#footer').offset();  
-  $('#page_wrapper').css('height', (footerOffSet.top + 30));
+  if($('#footer').is('*')) {
+    footerOffSet = $('#footer').offset();
+    $('#page_wrapper').css('height', footerOffSet.top);
 
-// setting the line holder height to extend past footer
-  $('#line_holder').css('height', (footerOffSet.top + 74));
-  
+  // setting the line holder height to extend past footer
+    $('#line_holder').css('height', (footerOffSet.top + 80));
+  }
+
+  if($("meta[property='og:url']").attr('content').slice(28,32) == 'clas'){
+    $('#content_container').append("<div id='calendar_event_box'><input type='button' id='refresh_events' value='Refresh'/></div>");
+    $('#line_holder').css('height', (footerOffSet.top + 280));
+    $('#page_wrapper').css('height', (footerOffSet.top + 200));
+  }
+
+
 });
 

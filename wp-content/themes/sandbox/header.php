@@ -11,32 +11,29 @@
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
-  <script type="text/javascript" src="wp-content/uploads/2012/01/jquery.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.svg_.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/events.js"></script>
+  <script type="text/javascript" src="wp-content/themes/sandbox/jquery.js"></script>
+  <script type="text/javascript" src="wp-content/themes/sandbox/jquery.svg_.js"></script>
+  <script type="text/javascript" src="wp-content/themes/sandbox/jStorage.js"></script>
+
   <script type="text/javascript" src="wp-content/themes/sandbox/application.js"></script>
-  <script type="text/javascript" src="wp-content/uploads/2011/12/jquery.soliloquy.js"></script>
-
-
+  <script type="text/javascript" src="wp-content/themes/sandbox/events.js"></script>  
+  <script type="text/javascript" src="wp-content/themes/sandbox/jquery.soliloquy.js"></script>
 
 <script>
- $(function(){  
-    $('.feed')
-      .slq().facebook({username: 'FremontAbbey', posts: 8, relativeDates: false })
-      .slq().twitter({username: 'fremontabbey', posts: 4, relativeDates: false })
-      .slq().twitterList({username: 'fremontabbey', listname: 'core', posts: 2 })
+$(function(){  
+    $('.feed').slq().twitter({username: 'fremontabbey', posts: 4, relativeDates: false })
 });
 </script>
 
-
-<script>(function(d, s, id) {
+<script>
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=220809154671406";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <script>
   window.fbAsyncInit = function() {

@@ -525,4 +525,3 @@ add_filter( 'archive_meta', 'wpautop' );
 
 // Remember: the Sandbox is for play.
 ?>
-
