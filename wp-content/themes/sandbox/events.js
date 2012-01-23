@@ -40,14 +40,17 @@ function showCalendar(){
       calCont += "<div class='anEvent'><h4>" + title + "</h4><h5> at " + theHours + ":" + theMinutes + theMeridian + "</h5></div>";
     }
   });//.each
-  jQuery('#calendar_event_box').append(calCont)
+  jQuery('#refresh_events img:first-child').animate({marginLeft: "-26px"}, 0);
+  jQuery('#calendar_event_box').append(calCont);
+  jQuery('#refresh_events img:first-child').delay(2200).animate({marginLeft: "0px"}, 0 )
 }
 
 jQuery(document).ready(function($) {
   showCalendar();
   
   jQuery('#refresh_events').click(function(){
-    jQuery.jStorage.flush('calKey')
+    jQuery('#refresh_events img:first-child').animate({marginLeft: "-26px"}, 0)// .delay(2200)
+    // jQuery.jStorage.flush('calKey')
     jQuery.getJSON('https://www.google.com/calendar/feeds/e2avichif01pf6b1im7aa63gh4%40group.calendar.google.com/public/full?alt=json-in-script&orderby=starttime&max-results=5&singleevents=true&sortorder=ascending&futureevents=true&callback=?', function(data) {
       calObj = data;
       $.jStorage.set("calKey", calObj);
@@ -55,6 +58,7 @@ jQuery(document).ready(function($) {
       jQuery('#calendar_event_box').html('')
       showCalendar();
     });
+    jQuery('#refresh_events img:first-child').delay(2200).animate({marginLeft: "0px"}, 0 )
   });
 });
   

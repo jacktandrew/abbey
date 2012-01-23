@@ -6,7 +6,7 @@
         the City of Seattle, Department of </br>
         Information Technology </br>
       </p>
-      <img src="wp-content/themes/sandbox/images/seattle_city_logo.png">
+      <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/seattle_city_logo.png">
     </div><!-- #footer -->
   </body>
 </html>
