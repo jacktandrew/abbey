@@ -1,10 +1,54 @@
 <?php get_header() ?>
 <body>
 <div ID="fb-root"></div>
+<div id="contact" class="top_tab">
+  <div>
+    <h4>NATHAN MARION</h4>
+    <h5>Awesome Guy</h5>
+    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    </br>
+    <h4>STEVEN HARDIN</h4>
+    <h5>Booking/Rates/Inquiries</h5>
+    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    </br>
+    <p>
+      Fremont Abbey is located minutes 
+      outside of downtown Seattle, and its
+      setting is comfortable and close to
+      nearby businesses.  Upon request, clients
+      are welcome to attend sessions, though it
+      is not required.
+    </p>
+  </div>  
+  <h3>CONTACT</h3>
+</div>
+<div id="sponsors" class="top_tab">
+  <div>
+    <h4>NATHAN MARION</h4>
+    <h5>Awesome Guy</h5>
+    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    </br>
+    <h4>STEVEN HARDIN</h4>
+    <h5>Booking/Rates/Inquiries</h5>
+    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    </br>
+    <p>
+      Fremont Abbey is located minutes 
+      outside of downtown Seattle, and its
+      setting is comfortable and close to
+      nearby businesses.  Upon request, clients
+      are welcome to attend sessions, though it
+      is not required.
+    </p>
+  </div>
+  <h3>SPONSORS</h3>
+</div>
+
   <div ID="line_holder"></div>
   <div ID="page">
     <div ID="floater">
       <div ID="fb-like-box" CLASS="fb-like" data-href="http://abbey.checksteveout.com/" data-send="false" data-layout="button_count" data-width="600" data-show-faces="false" data-font="verdana"></div>
+      
       <a HREF="<?php bloginfo('url'); ?>/"><img SRC="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/name.png" ID="name_img"/></a>
       <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/icons.png" ID="icons" />
       <br/>
@@ -77,6 +121,4 @@
       </div> <!-- page_wrapper -->
       <?php get_footer() ?>
     </div> <!-- floater -->
-
   </div> <!-- page -->
-

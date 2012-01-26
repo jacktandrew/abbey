@@ -219,7 +219,7 @@ padding:0;
 
 
 
-* {margin: 0; padding: 0; text-decoration: none; font-family: lucida grande,tahoma,verdana,arial,sans-serif;}
+* {margin: 0; padding: 0; text-decoration: none; font-family: futura, Helvetica, sans-serif;}
 body {background-color:#efecd6; background-repeat:repeat-y; background-position:center; overflow-x: hidden;}
 li {list-style-type:none;}
 #splash a:hover, .nav_links a:hover, .widget_nav_menu a:hover {opacity: .6;}
@@ -250,9 +250,17 @@ li {list-style-type:none;}
 /*#line_holder { position: absolute; background-image: url("images/diag.png"); background-repeat:repeat; z-index: -10; height: 1000px; width: 1500px; margin-top: 170px;}*/
 #page {position:relative; left:50%; width: 100px;}
 
-
+#nav_buttons, .top_tab, #icons {position: relative; z-index: 0;}
 #line_holder { position: absolute; background-color:#efecd6; z-index: -10; width: 100%; height:160px; margin-top: 0px;}
-#nav_buttons {top: 130px; left: 130px;}
+#nav_buttons {top: 130px; left: 130px; z-index: 1;}
+
+
+.top_tab {z-index: 2; float: right; text-align: center; margin: 0 5px; background: #949698; font-family: futura, helvetica, san-serif; color: #fff; font-size: 11px;  width: 140px;}
+.top_tab a {color: #fff;  padding: 1px 0; margin: 1px 0; display: block;}
+.top_tab a h5 {display: inline; border: 1px solid #949698;}
+.top_tab a h5:hover{border: 1px dotted #fff;}
+.top_tab h3 {padding: 5px 0px;}
+.top_tab div {width: 205px; background: #949698; margin: 0px 0px 0px -80px; padding: 35px 10px 25px; text-align: left; display: none;}
 
 
 #floater {position:relative; left: -350px; text-align:left;}

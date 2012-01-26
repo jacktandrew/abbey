@@ -6,6 +6,49 @@ Template Name: Wide
 <?php get_header() ?>
 <body>
 <div ID="fb-root"></div>
+<div id="contact" class="top_tab">
+  <div>
+    <h4>NATHAN MARION</h4>
+    <h5>Awesome Guy</h5>
+    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    </br>
+    <h4>STEVEN HARDIN</h4>
+    <h5>Booking/Rates/Inquiries</h5>
+    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    </br>
+    <p>
+      Fremont Abbey is located minutes 
+      outside of downtown Seattle, and its
+      setting is comfortable and close to
+      nearby businesses.  Upon request, clients
+      are welcome to attend sessions, though it
+      is not required.
+    </p>
+  </div>  
+  <h3>CONTACT</h3>
+</div>
+<div id="sponsors" class="top_tab">
+  <div>
+    <h4>NATHAN MARION</h4>
+    <h5>Awesome Guy</h5>
+    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    </br>
+    <h4>STEVEN HARDIN</h4>
+    <h5>Booking/Rates/Inquiries</h5>
+    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    </br>
+    <p>
+      Fremont Abbey is located minutes 
+      outside of downtown Seattle, and its
+      setting is comfortable and close to
+      nearby businesses.  Upon request, clients
+      are welcome to attend sessions, though it
+      is not required.
+    </p>
+  </div>
+  <h3>SPONSORS</h3>
+</div>
+
   <div id="wide_page">
   <div ID="line_holder"></div>
   <div ID="page">
