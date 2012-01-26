@@ -17,9 +17,7 @@ dropDownMenu('#about',   '#nav_menu-5');
 // toggle the contact and sponsor slide down boxes
   function tabSlide(element){    
     $(element).click(function(){
-      if($('#contact').height() === $('#sponsors').height()){
-        $(element + ' div').slideToggle();
-      }else if($(element).height() > 50){  
+      if($('#contact').height() === $('#sponsors').height() || $(element).height() > 50){
         $(element + ' div').slideToggle();
       }else if($('#contact').height() > $('#sponsors').height()){
         $('#contact div').slideToggle();

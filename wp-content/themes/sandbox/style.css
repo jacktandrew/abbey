@@ -219,7 +219,7 @@ padding:0;
 
 
 
-* {margin: 0; padding: 0; text-decoration: none; font-family: futura, Helvetica, sans-serif;}
+* {margin: 0; padding: 0; text-decoration: none; font-family: futura, Helvetica, sans-serif; font-weight: 100;}
 body {background-color:#efecd6; background-repeat:repeat-y; background-position:center; overflow-x: hidden;}
 li {list-style-type:none;}
 #splash a:hover, .nav_links a:hover, .widget_nav_menu a:hover {opacity: .6;}
@@ -260,7 +260,7 @@ li {list-style-type:none;}
 .top_tab a h5 {display: inline; border: 1px solid #949698;}
 .top_tab a h5:hover{border: 1px dotted #fff;}
 .top_tab h3 {padding: 5px 0px;}
-.top_tab div {width: 205px; background: #949698; margin: 0px 0px 0px -80px; padding: 35px 10px 25px; text-align: left; display: none;}
+.top_tab div {width: 205px; background: #949698; margin: 0px 0px 0px -80px; padding: 85px 10px 25px; text-align: left; display: none;}
 
 
 #floater {position:relative; left: -350px; text-align:left;}
@@ -271,7 +271,7 @@ li {list-style-type:none;}
 #icons {top: 95px; left: 630px;}
 /*#nav_buttons {top: 140px; left: 132px;}*/
 
-.nav_links {position: absolute; height: 30px; width: 130px; top: 151px;}
+.nav_links {position: absolute; height: 30px; width: 130px; top: 151px; z-index: 2; font-size: 14px; letter-spacing:2px;}
 .nav_links img {position: absolute; top: -20px; left: 0px;}
 .nav_links div {display: none; color: #666; background: #fff; padding: 6px 11px 10px; height: 14px; width: 108px;}
 .nav_links:hover {opacity: 1;}
