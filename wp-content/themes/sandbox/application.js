@@ -32,12 +32,11 @@ dropDownMenu('#about',   '#nav_menu-5');
   tabSlide('#contact');
   tabSlide('#sponsors');
 
+  if($("meta[property='og:url']").attr('content').slice(17,21) === '8888'){
 
-  if($("meta[property='og:url']").attr('content').slice(17,21) === 8888){
-    console.log('Site is running on localhost')
+    console.log('Site is running on localhost');
     // changes the color of the lines according to the title of the page
     sliceTitle = $("meta[property='og:url']").attr('content').slice(28,32);
-    console.log(sliceTitle)
 
     function backgroundSwap(pageTitle, imgFile){
       if(sliceTitle === pageTitle){
@@ -50,8 +49,8 @@ dropDownMenu('#about',   '#nav_menu-5');
     backgroundSwap('rent', "url('/abbey/wp-content/themes/sandbox/images/diag2-rent.png')");
     backgroundSwap('abou', "url('/abbey/wp-content/themes/sandbox/images/diag2-about.png')");
 
-    if($("meta[property='og:url']").attr('content').slice(28,32) == 'even'){
-      $('#wide_page #page_wrapper .fb-comments').css('float', 'right');
+    if($("meta[property='og:url']").attr('content').slice(28,32) == 'clas'){
+      $('#page_wrapper .fb-comments').css({'float':'right', 'margin-right':'10px'});
     }
     
   }else{
@@ -59,7 +58,6 @@ dropDownMenu('#about',   '#nav_menu-5');
     console.log('Site is running on dev server')
     // changes the color of the lines according to the title of the page
     sliceTitle = $("meta[property='og:url']").attr('content').slice(31,35);
-    console.log(sliceTitle)
 
     function backgroundSwap(pageTitle, imgFile){
       if(sliceTitle === pageTitle){
@@ -71,12 +69,10 @@ dropDownMenu('#about',   '#nav_menu-5');
     backgroundSwap('clas', "url('/wp-content/themes/sandbox/images/diag2-classes.png')");
     backgroundSwap('rent', "url('/wp-content/themes/sandbox/images/diag2-rent.png')");
     backgroundSwap('abou', "url('/wp-content/themes/sandbox/images/diag2-about.png')");
-  
-  }
 
-
-  if($("meta[property='og:url']").attr('content').slice(31,35) == 'even'){
-    $('#wide_page #page_wrapper .fb-comments').css('float', 'right');
+    if($("meta[property='og:url']").attr('content').slice(31,35) == 'even'){
+      $('#wide_page #page_wrapper .fb-comments').css({'float':'right', 'margin-right':'10px'});
+    }
   }
 });
 

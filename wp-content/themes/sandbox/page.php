@@ -5,11 +5,11 @@
   <div>
     <h4>NATHAN MARION</h4>
     <h5>Awesome Guy</h5>
-    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    <a href='mailto:nathan@fremontabbey.org'>nathan@fremontabbey.org</a>
     </br>
     <h4>STEVEN HARDIN</h4>
     <h5>Booking/Rates/Inquiries</h5>
-    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    <a href='mailto:steve@checksteveout.com'>steve@checksteveout.com</a>
     </br>
     <p>
       Fremont Abbey is located minutes 
@@ -26,11 +26,11 @@
   <div>
     <h4>NATHAN MARION</h4>
     <h5>Awesome Guy</h5>
-    <a href='mailto:nathan@fremontabbey.org'><h5>nathan@fremontabbey.org</h5></a>
+    <a href='mailto:nathan@fremontabbey.org'>nathan@fremontabbey.org</a>
     </br>
     <h4>STEVEN HARDIN</h4>
     <h5>Booking/Rates/Inquiries</h5>
-    <a href='mailto:steve@checksteveout.com'><h5>steve@checksteveout.com</h5></a>
+    <a href='mailto:steve@checksteveout.com'>steve@checksteveout.com</a>
     </br>
     <p>
       Fremont Abbey is located minutes 

@@ -255,10 +255,9 @@ li {list-style-type:none;}
 #nav_buttons {top: 130px; left: 130px; z-index: 1;}
 
 
-.top_tab {z-index: 2; float: right; text-align: center; margin: 0 5px; background: #949698; font-family: futura, helvetica, san-serif; color: #fff; font-size: 11px;  width: 140px;}
+.top_tab {z-index: 3; float: right; text-align: center; margin: 0 5px; background: #949698; font-family: futura, helvetica, san-serif; color: #fff; font-size: 11px;  width: 140px;}
 .top_tab a {color: #fff;  padding: 1px 0; margin: 1px 0; display: block;}
-.top_tab a h5 {display: inline; border: 1px solid #949698;}
-.top_tab a h5:hover{border: 1px dotted #fff;}
+.top_tab a:hover {color: #ccc;}
 .top_tab h3 {padding: 5px 0px;}
 .top_tab div {width: 205px; background: #949698; margin: 0px 0px 0px -80px; padding: 85px 10px 25px; text-align: left; display: none;}
 
@@ -328,8 +327,8 @@ li {list-style-type:none;}
 	#page_wrapper .entry-title {font-size:32px; line-height:36px; letter-spacing:0.2em; margin-top:10px;}
 
 /*---:[ Facebook Plugin ]:---*/
-.fbFeedbackContent {width:440px !important; float: right;}
-
+.fbFeedbackContent {width:440px !important;}
+fb_iframe_widget {margin-left: 10px;}
 
 /*---:[ events calendar ]:---*/
 
