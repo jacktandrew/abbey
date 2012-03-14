@@ -9,10 +9,10 @@ $(document).ready(function() {
     });
   }
     
-dropDownMenu('#events',  '#nav_menu-2');
-dropDownMenu('#classes', '#nav_menu-3');
-dropDownMenu('#rent',    '#nav_menu-4');
-dropDownMenu('#about',   '#nav_menu-5');
+dropDownMenu('#events',  '#nav_menu-3');
+dropDownMenu('#classes', '#nav_menu-4');
+dropDownMenu('#rent',    '#nav_menu-5');
+dropDownMenu('#about',   '#nav_menu-6');
 
 // toggle the contact and sponsor slide down boxes
   function tabSlide(element){    

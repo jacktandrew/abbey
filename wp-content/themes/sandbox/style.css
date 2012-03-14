@@ -285,10 +285,10 @@ li {list-style-type:none;}
 #primary .widget_nav_menu a {color: #666; font-weight: lighter;}
 #primary .widget_nav_menu {position: absolute; top: 181px; background: #fff; display: none;}
 
-#primary #nav_menu-2 {left: 35px;}
-#primary #nav_menu-3 {left: 175px;}
-#primary #nav_menu-4 {left: 315px;}
-#primary #nav_menu-5 {left: 455px;}
+#primary #nav_menu-3 {left: 35px;}
+#primary #nav_menu-4 {left: 175px;}
+#primary #nav_menu-5 {left: 315px;}
+#primary #nav_menu-6 {left: 455px;}
 
 #page #facebook, #page #twitter, #page #youtube {position: absolute; left: 702px; height: 50px; width: 50px;}
 #page #facebook {top: 141px;}

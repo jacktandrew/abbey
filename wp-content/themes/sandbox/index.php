@@ -76,10 +76,33 @@ get_header() ?>
       <img SRC="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/icons.png" ID="icons" />
       <br/>
       <img SRC="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/nav_buttons.png" ID="nav_buttons"/>
-      <a HREF="<?php bloginfo('url'); ?>/events" ID="events"></a>
-      <a HREF="<?php bloginfo('url'); ?>/classes" ID="classes"></a>
-      <a HREF="<?php bloginfo('url'); ?>/rent" ID="rent"></a>
-      <a HREF="<?php bloginfo('url'); ?>/about" ID="about"></a>
+      <a href="<?php bloginfo('url'); ?>/events" id="events" class="nav_links">
+        <div>
+          <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/events_tzoid.png" />
+          EVENTS
+        </div>
+      </a>
+      
+      <a href="<?php bloginfo('url'); ?>/classes" id="classes" class="nav_links">
+        <div>
+          <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/classes_tzoid.png" />
+          CLASSES
+        </div>
+      </a>
+      
+      <a href="<?php bloginfo('url'); ?>/rent" id="rent" class="nav_links">
+        <div>
+          <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/rent_tzoid.png" />
+          RENT
+        </div>
+      </a>
+      
+      <a href="<?php bloginfo('url'); ?>/about" id="about" class="nav_links">
+        <div>
+          <img src="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/about_tzoid.png" />
+          ABOUT
+        </div>
+      </a>
       <img SRC="<?php bloginfo('url'); ?>/wp-content/themes/sandbox/images/fb-t-yt.png" ID="fb-t-yt" />
       <a HREF="http://www.facbook.com/" ID="facebook"></a>
       <a HREF="http://www.twitter.com/" ID="twitter"></a>
