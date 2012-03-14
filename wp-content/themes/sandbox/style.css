@@ -255,7 +255,7 @@ li {list-style-type:none;}
 #nav_buttons {top: 130px; left: 130px; z-index: 1;}
 
 
-.top_tab {z-index: 3; float: right; text-align: center; margin: 0 5px; background: #949698; font-family: futura, helvetica, san-serif; color: #fff; font-size: 11px;  width: 140px;}
+.top_tab { cursor: pointer; z-index: 3; float: right; text-align: center; margin: 0 5px; background: #949698; font-family: futura, helvetica, san-serif; color: #fff; font-size: 11px;  width: 140px;}
 .top_tab a {color: #fff;  padding: 1px 0; margin: 1px 0; display: block;}
 .top_tab a:hover {color: #ccc;}
 .top_tab h3 {padding: 5px 0px;}
@@ -307,7 +307,7 @@ li {list-style-type:none;}
 /*.entry-title {float: left;}*/
 
 #dynamic_bar {width: 220px; float:right; padding: 0 10px 0 0; margin-top: 15px;}
-#dynamic_bar .sidebar {width: 220px;}
+#dynamic_bar .sidebar {width: 220px; margin-bottom: 25px;}
 #wide_page #dynamic_bar {float: left; margin-top: 0px;}
 
 #dynamic_bar .feed {color:#666; font-weight: lighter; font-size: 12px; min-height: 300px;}
