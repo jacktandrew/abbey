@@ -461,7 +461,7 @@ function sandbox_widgets_init() {
 	);
 
 	// Table for how many? Two? This way, please.
-	register_sidebars( 2, $p );
+	register_sidebars( 3, $p );
 
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(
@@ -525,4 +525,3 @@ add_filter( 'archive_meta', 'wpautop' );
 
 // Remember: the Sandbox is for play.
 ?>
-
